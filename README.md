@@ -21,64 +21,33 @@ Basta rodar o arquivo `Main.java`. Ele demonstra:
 3.2 Merge entre dois vetores  
 
 ## Exemplos Utilizados
-Pilha
-Pilha pilha = new Pilha();
-pilha.empilhar(1);
-pilha.empilhar(3);
-pilha.empilhar(5);
-pilha.mostrar();
-pilha.desempilhar();
-pilha.mostrar();
+Pilha:
+Inserções: 1, 3, 5, 7
 
-Saída:
-Conteúdo da pilha (topo → base): 5 3 1
-Removido da pilha: 5
-Conteúdo da pilha (topo → base): 3 1
+Remoções: 2 elementos
 
-Fila
-Fila fila = new Fila();
-fila.enfileirar(2);
-fila.enfileirar(4);
-fila.enfileirar(6);
-fila.mostrar();
-fila.desenfileirar();
-fila.mostrar();
+Resultado: 3 → 1 → Null
 
-Saída:
-Conteúdo da fila (início → fim): 2 4 6
-Removido da fila: 2
-Conteúdo da fila (início → fim): 4 6
+Fila:
+Inserções: 2, 4, 6, 8
 
-Merge (listas)
-Fila A = new Fila();
-A.enfileirar(10);
-A.enfileirar(30);
-A.enfileirar(50);
+Remoções: 2 elementos
 
-Fila B = new Fila();
-B.enfileirar(5);
-B.enfileirar(20);
-B.enfileirar(40);
-B.enfileirar(60);
+Resultado: 6 → 8 → Null
 
-Fila C = MergeLista.juntar(A, B);
-C.mostrar();
+Merge (Listas Encadeadas):
+Fila A: 1 → 3 → 5 → 7 → 9 → Null
 
-Saída:
-Conteúdo da fila (início → fim): 5 10 20 30 40 50 60
+Fila B: 2 → 4 → 6 → 8 → Null
 
-Merge (vetores)
-int[] vetorA = {7, 15, 25};
-int[] vetorB = {3, 8, 20, 30};
+Resultado: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → Null
 
-int[] vetorC = MergeVetor.juntar(vetorA, 3, vetorB, 4);
+Merge (Vetores):
+Vetor A: {1, 3, 5, 7, 9}
 
-for (int i = 0; i < vetorC.length; i++) {
-    System.out.print(vetorC[i] + " ");
-}
+Vetor B: {2, 4, 6, 8}
 
-Saída:
-3 7 8 15 20 25 30
+Resultado: {1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 ## Extras
 Você pode alterar os valores que são inseridos na pilha, fila ou vetores no código para realizar outros testes.
