@@ -13,7 +13,7 @@
 
 ##  Como executar
 
-Basta rodar o arquivo `Main.java`. Ele demonstra:
+ Rodar o arquivo `Main.java`. Ele demonstra:
 
 1. Pilha funcionando  
 2. Fila funcionando  
