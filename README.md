@@ -20,17 +20,8 @@ Basta rodar o arquivo `Main.java`. Ele demonstra:
 3.1 Merge entre duas filas (lista encadeada)  
 3.2 Merge entre dois vetores  
 
-### Compilar:
-```bash
-javac src/*.java
-Executar:
-bash
-Copiar código
-java -cp src Main
-📝 Exemplos utilizados
+## Exemplos Utilizados
 Pilha
-java
-Copiar código
 Pilha pilha = new Pilha();
 pilha.empilhar(1);
 pilha.empilhar(3);
@@ -38,16 +29,13 @@ pilha.empilhar(5);
 pilha.mostrar();
 pilha.desempilhar();
 pilha.mostrar();
-Saída esperada:
 
-csharp
-Copiar código
+Saída:
 Conteúdo da pilha (topo → base): 5 3 1
 Removido da pilha: 5
 Conteúdo da pilha (topo → base): 3 1
+
 Fila
-java
-Copiar código
 Fila fila = new Fila();
 fila.enfileirar(2);
 fila.enfileirar(4);
@@ -55,16 +43,13 @@ fila.enfileirar(6);
 fila.mostrar();
 fila.desenfileirar();
 fila.mostrar();
-Saída esperada:
 
-java
-Copiar código
+Saída:
 Conteúdo da fila (início → fim): 2 4 6
 Removido da fila: 2
 Conteúdo da fila (início → fim): 4 6
+
 Merge (listas)
-java
-Copiar código
 Fila A = new Fila();
 A.enfileirar(10);
 A.enfileirar(30);
@@ -78,14 +63,11 @@ B.enfileirar(60);
 
 Fila C = MergeLista.juntar(A, B);
 C.mostrar();
-Saída esperada:
 
-java
-Copiar código
+Saída:
 Conteúdo da fila (início → fim): 5 10 20 30 40 50 60
+
 Merge (vetores)
-java
-Copiar código
 int[] vetorA = {7, 15, 25};
 int[] vetorB = {3, 8, 20, 30};
 
@@ -94,11 +76,11 @@ int[] vetorC = MergeVetor.juntar(vetorA, 3, vetorB, 4);
 for (int i = 0; i < vetorC.length; i++) {
     System.out.print(vetorC[i] + " ");
 }
-Saída esperada:
 
-Copiar código
+Saída:
 3 7 8 15 20 25 30
-🔹 Extras
+
+## Extras
 Você pode alterar os valores que são inseridos na pilha, fila ou vetores no código para realizar outros testes.
 
 Sempre que um elemento é removido de uma estrutura, o programa mostra qual foi o valor retirado.
